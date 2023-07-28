@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/* ================================= */
+/* =======Header-Area======== */
+/* ================================= */
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #ebb9c1;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #241717;
+}
+
+.navbar a:hover {
+    color: #28b4a2;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 90px;
+    gap: 100px;
+}
+
+.main-title {
+    font-size: 55px;
+    color: #e4a00e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main-title .color {
+    color: #021036;
+}
+
+.description {
+    width: 70%;
+    font-size: 18px;
+    color: #15151b;
+    margin-bottom: 15px;
+}
+
+/* Button all */
+
+.btn {
+    display: flex;
+    border: none;
+    padding: 15px 30px;
+    background-color: #135513;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.btn img {
+    max-width: 25px;
+}
+
+.btn:hover {
+    background-color: #ebb9c1;
+    color: #15151b;
+}
+
+/* ============================================ */
+/* =======Womanjacket-Section Style======= */
+/* ============================================ */
+
+.Womanjacket-section {
+    padding: 30px 80px;
+}
+
+.woman-title {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #021036;
+    margin-bottom: 60px;
+}
+
+.woman-jacket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.jacket {
+    box-shadow: 5px 5px 10px #15151b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.photo {
+    width: 100%;
+    background-color: #776969;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.jacket img {
+    width: 200px;
+}
+
+.jacket-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #0b193f;
+}
+
+.para {
+
+    color: #0b193f;
+    margin-bottom: 10px;
+}
+
+.princes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 30px;
+    color: #b99e01;
+    font-weight: 700;
+}
+
+/* =========================================== */
+/* ==========Card-Item-CSS============== */
+/* ============================================ */
+
+.shopping-area {
+    padding: 30px 130px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 2px 2px 5px #c5c5ce;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    max-width: 80px;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #053aca;
+    margin-bottom: 10px;
+}
+
+.card-banner img {
+    max-width: 500px;
+}
+
+/* ============================================== */
+/* ==========Footer-Area============ */
+/* ============================================= */
+
+.footer-area {
+    background-color: #f7d0d6;
+}
+
+.footer-row {
+    padding: 30px 80px;
+}
+
+.footer-logo img {
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.footer-dese {
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive-CSS */
+
+@media only screen and (max-width: 935px) {
+    .banner img {
+        max-width: 350px;
+    }
+}
+
+
+
+@media only screen and (max-width: 830px) {
+    .nav-section {
+        flex-direction: column;
+    }
+    .logo img {
+        width: 500px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .main-title {
+        font-size: 35px;
+    }
+
+    .woman-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .woman-jacket {
+        flex-direction: column;
+    }
+
+    .jacket {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-row {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        width: 400px;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .main-title {
+        font-size: 35px;
+    }
+
+    .woman-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .woman-jacket {
+        flex-direction: column;
+    }
+
+    .jacket {
+        width: 70%;
+        height: 70%;
+    }
+
+    .card-row {
+        flex-direction: column-reverse;
+    }
+
+    .card-banner img {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo img {
+        width: 400px;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .woman-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .woman-jacket {
+        flex-direction: column;
+    }
+
+
+    .card-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-row {
+        flex-direction: column-reverse;
+    }
+
+    .card-banner img {
+        width: 300px;
+    }
+
+    .footer-logo img {
+        width: 300px;
+    }
+
+    .btn {
+        font-size: 5px;
+    }
+
+    .btn img {
+        max-width: 15px;
+    }
+}
